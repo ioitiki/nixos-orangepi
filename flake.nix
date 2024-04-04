@@ -10,6 +10,9 @@
     nixosConfigurations.orangepi = nixpkgs.lib.nixosSystem {
       system = "aarch64-linux";
       modules = [
+        let
+          buildConfig = orangepi-5x.buildConfig;
+        in
         (buildConfig { inherit pkgs; lib = nixpkgs.lib; user = "andy"; })
           ({ pkgs, lib, user, ... }: {
 
