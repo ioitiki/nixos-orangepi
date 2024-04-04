@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
     home-manager.url = "github:nix-community/home-manager/release-23.11";
-    orangepi-5x.url = "path:./fb87";
+    orangepi-5x.url = "github:fb87/nixos-orangepi-5x";
     # Add other inputs as required
   };
 
